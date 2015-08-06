@@ -20,4 +20,25 @@ public class Euler
     
     return sum;
   }
+  
+  public static int problem2()
+  {
+    int total = 0;
+    int current = 1;
+    int previous = 1;
+    int temp = 0;
+    
+    while (current<4000000)
+    {
+      if (current%2==0)
+      {
+        total += current;
+      }
+      temp = current;
+      current = current + previous;
+      previous = temp;
+    }
+    
+    return total;
+  }
 }
