@@ -1,3 +1,8 @@
+/* 
+ * @Author: Jonathan Monreal
+ * My practice problems from Project Euler in Java.
+ */
+
 public class Euler
 {
   public static int problem1()
