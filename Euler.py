@@ -1,4 +1,5 @@
 # Jonathan Monreal
+# My practice problems from Project Euler in Python.
 
 def problem_1():
     multiples = set()
@@ -17,7 +18,6 @@ def problem_2():
     previous = 1
 
     while current < 4000000:
-        print current
         if current % 2 == 0:
             total += current
         temp = current
