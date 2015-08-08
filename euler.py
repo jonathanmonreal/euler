@@ -33,3 +33,17 @@ def problem_4():
             if i * j > largest and str(i * j) == str(i * j)[::-1]:
                 largest = i * j
     return largest
+
+def problem_5():
+    n = 20
+    not_found = True
+    
+    while not_found:
+        n += 20
+        not_found = False
+        for i in range(1, 21):
+            if float(n) / i % 1 != 0:
+                not_found = True
+                break
+
+    return n
