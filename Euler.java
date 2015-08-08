@@ -63,6 +63,28 @@ public class Euler
     return largest;
   }
   
+  public static int problem5()
+  {
+    int n = 20;
+    boolean notFound = true;
+    
+    while (notFound)
+    {
+      n += 20;
+      notFound = false;
+      for (int i = 1; i < 21; i++)
+      {
+        if ((double)n / i % 1 != 0)
+        {
+          notFound = true;
+          break;
+        }
+      }
+    }
+    
+    return n;
+  }
+  
   /* Helper methods: */
   
   public static int reverse(int n)
