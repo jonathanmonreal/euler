@@ -26,6 +26,14 @@ def problem_2():
 
     return total
 
+def problem_4():
+    largest = -1
+    for i in range(100, 1000):
+        for j in range(100, 1000):
+            if i * j > largest and str(i * j) == str(i * j)[::-1]:
+                largest = i * j
+    return largest
+
 def problem_5():
     n = 20
     not_found = True
