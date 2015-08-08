@@ -46,4 +46,36 @@ public class Euler
     
     return total;
   }
+  
+  public static int problem4()
+  {
+    int largest = -1;
+    
+    for (int i = 100; i < 1000; i++)
+    {
+      for (int j = 100; j < 1000; j++)
+      {
+        if (i * j > largest && i * j == reverse(i * j))
+          largest = i * j;
+      }
+    }
+    
+    return largest;
+  }
+  
+  /* Helper methods: */
+  
+  public static int reverse(int n)
+  {
+    int reversed = 0;
+    
+    while (n > 0)
+    {
+      int digit = n % 10;
+      reversed = (reversed * 10) + digit;
+      n /= 10;
+    }
+    
+    return reversed;
+  }
 }
