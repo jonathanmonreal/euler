@@ -85,6 +85,21 @@ public class Euler
     return n;
   }
   
+  public static int problem6()
+  {
+    int sumOfSquares = 0;
+    int squareOfSum = 0;
+    
+    for (int i = 1; i < 101; i++)
+    {
+      sumOfSquares += i * i;
+      squareOfSum += i;
+    }
+    squareOfSum *= squareOfSum;
+    
+    return squareOfSum - sumOfSquares;
+  }
+  
   /* Helper methods: */
   
   public static int reverse(int n)
