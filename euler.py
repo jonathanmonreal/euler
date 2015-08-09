@@ -47,3 +47,14 @@ def problem_5():
                 break
 
     return n
+
+def problem_6():
+    sum_of_squares = 0
+    square_of_sum = 0
+
+    for i in range(1, 101):
+        sum_of_squares += i ** 2
+        square_of_sum += i
+    square_of_sum **= 2
+
+    return square_of_sum - sum_of_squares
